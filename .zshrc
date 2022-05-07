@@ -114,7 +114,7 @@ alias opacity='python ~/.config/scripts/change_alacritty_opacity.py'
 # ptls aliases
 alias l='ptls -a'
 alias ll='ptls -la'
-alias cp='ptcp'
+# alias cp='ptcp'
 # lsd instead of ls
 alias ls='lsd'
 alias la='lsd -a'
