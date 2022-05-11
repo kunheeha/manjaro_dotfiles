@@ -1,0 +1,9 @@
+configuration {
+  modi: "run,drun,ssh,window";
+  font: "DM Mono Nerd 12";
+  show-icons: true;
+  terminal: "alacritty";
+	drun-display-format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";
+  location: 0;
+
+}
