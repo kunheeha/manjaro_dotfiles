@@ -55,6 +55,8 @@ Plug 'Pocco81/HighStr.nvim'
 Plug 'justinmk/vim-sneak'
 -- Startify
 Plug 'mhinz/vim-startify'
+-- Colourschemes
+Plug 'rktjmp/lush.nvim'
 
 
 vim.call('plug#end')

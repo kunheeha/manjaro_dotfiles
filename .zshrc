@@ -128,9 +128,14 @@ alias lowbrightness='xrandr --output HDMI-A-0 --brightness 0.1 && xrandr --outpu
     
 # Git
 alias gA='git add .'
+alias ga='git add'
 alias gc='git commit -m'
 alias gs='git status'
 alias gp='git push origin'
+alias gpf='git push -f origin'
+alias gbd='git branch -d'
+alias gr='git rebase origin/master'
+alias grc='git rebase --continue'
 
 # Work
 alias staff='cd ~/Work/webapp-alpha'
