@@ -150,6 +150,8 @@ alias migrate='./scripts/plan_migrations.sh'
 alias synccase='./scripts/sync_case_to_client_app.sh'
 alias dbrestore='./scripts/cache_database_restore.sh'
 alias dbcreate='./scripts/cache_database_create.sh'
+alias dbdelete='./scripts/cache_database_destroy.sh'
+alias clientdbrefresh='./scripts/drop_database.sh && ./scripts/create_database.sh'
 #
 # Random
 alias cpufetch='~/cpufetch/cpufetch'
