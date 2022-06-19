@@ -47,6 +47,8 @@ Plug 'karb94/neoscroll.nvim'
 Plug 'voldikss/vim-floaterm'
 -- Git
 Plug 'tpope/vim-fugitive'
+-- GitSigns
+Plug 'lewis6991/gitsigns.nvim'
 -- VisIncr
 Plug 'vim-scripts/VisIncr'
 -- HighStr
