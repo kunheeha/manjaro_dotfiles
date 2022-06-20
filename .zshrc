@@ -102,6 +102,8 @@ eval $(thefuck --alias)
 
 # ALIASES
 
+# use bat instead of cat
+alias cat='bat'
 # use Neovim
 alias v='nvim'
 alias vim='nvim'
@@ -125,6 +127,8 @@ alias highbrightness='xrandr --output HDMI-A-0 --brightness 1.5 && xrandr --outp
 alias fullbrightness='xrandr --output HDMI-A-0 --brightness 1 && xrandr --output DisplayPort-0 --brightness 1'
 alias halfbrightness='xrandr --output HDMI-A-0 --brightness 0.5 && xrandr --output DisplayPort-0 --brightness 0.5'
 alias lowbrightness='xrandr --output HDMI-A-0 --brightness 0.1 && xrandr --output DisplayPort-0 --brightness 0.1'
+# ncmpcpp
+alias music='ncmpcpp'
     
 # Git
 alias gA='git add .'
