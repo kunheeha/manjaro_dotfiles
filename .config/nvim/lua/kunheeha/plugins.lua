@@ -59,6 +59,8 @@ Plug 'justinmk/vim-sneak'
 Plug 'mhinz/vim-startify'
 -- Colourschemes
 Plug 'rktjmp/lush.nvim'
+-- Indent Blankline
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 
 vim.call('plug#end')
