@@ -101,6 +101,8 @@ export PATH="${GOPATH}/bin:${PATH}"
 eval $(thefuck --alias)
 
 # ALIASES
+# Backup
+alias backup='sudo rsync -avzz /home/kunheeha /run/media/kunheeha/Backup'
 
 # use bat instead of cat
 alias cat='bat'
@@ -127,6 +129,11 @@ alias highbrightness='xrandr --output HDMI-A-0 --brightness 1.5 && xrandr --outp
 alias fullbrightness='xrandr --output HDMI-A-0 --brightness 1 && xrandr --output DisplayPort-0 --brightness 1'
 alias halfbrightness='xrandr --output HDMI-A-0 --brightness 0.5 && xrandr --output DisplayPort-0 --brightness 0.5'
 alias lowbrightness='xrandr --output HDMI-A-0 --brightness 0.1 && xrandr --output DisplayPort-0 --brightness 0.1'
+# second monitor only brightness controls
+alias 2highbrightness='xrandr --output DisplayPort-0 --brightness 1'
+alias 2fullbrightness='xrandr --output DisplayPort-0 --brightness 1'
+alias 2halfbrightness='xrandr --output DisplayPort-0 --brightness 0.5'
+alias 2lowbrightness='xrandr --output DisplayPort-0 --brightness 0.1'
 # ncmpcpp
 alias music='ncmpcpp'
     
