@@ -36,6 +36,8 @@ keymap("n", "<S-TAB>", ":bprev<CR>", opts)
 keymap("n", "<Leader>bk", ":bdelete<CR>", opts)
 -- NvimTreeToggle
 keymap("n", "<C-n>", ":NvimTreeToggle<CR>", opts)
+-- NvimTreeFindFile
+keymap("n", "<Leader>nf", ":NvimTreeFindFile", opts)
 -- Floaterm
 keymap("n", "<Leader>f", ":FloatermToggle", opts)
 keymap("n", "<Leader>fn", ":FloatermNext<CR>", opts)
