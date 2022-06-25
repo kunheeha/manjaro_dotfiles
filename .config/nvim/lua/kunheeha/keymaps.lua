@@ -48,6 +48,12 @@ keymap("n", "j", "gj", opts)
 keymap("n", "k", "gk", opts)
 -- Remove all HighStr Highlight
 keymap("n", "<Leader>rahl", ":<c-u>HSRmHighlight rm_all<CR>", opts)
+-- Gitsigns
+keymap("n", "<Leader>g", ":Gitsigns ", opts)
+keymap("n", "<Leader>gb", ":Gitsigns blame_line<CR>", opts)
+keymap("n", "<Leader>gs", ":Gitsigns stage_hunk<CR>", opts)
+keymap("n", "<Leader>gj", ":Gitsigns next_hunk<CR>", opts)
+keymap("n", "<Leader>gk", ":Gitsigns prev_hunk<CR>", opts)
 
 -- Visual Mode (v) --
 -- Better Tabbing
