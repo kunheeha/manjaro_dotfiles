@@ -1,10 +1,12 @@
 local cmp = require'cmp'
+local luasnip = require('luasnip')
 
 cmp.setup({
   -- Snippets
   snippet = {
     expand = function(args)
-      vim.fn["vsnip#anonymous"](args.body)
+      -- vim.fn["vsnip#anonymous"](args.body)
+      luasnip.lsp_expand(args.body)
     end,
   },
   window = {
@@ -20,7 +22,8 @@ cmp.setup({
   }),
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
-    { name = 'vsnip' }, -- Load vsnip
+    -- { name = 'vsnip' }, -- Load vsnip
+    { name = 'luasnip' },
   }, {
     { name = 'buffer' },
   })
