@@ -48,9 +48,9 @@ cmp.setup({
     end,
   },
   sources = cmp.config.sources({
+    { name = 'luasnip' }, -- Load luasnip
     { name = 'nvim_lsp' },
     -- { name = 'vsnip' }, -- Load vsnip
-    { name = 'luasnip' },
   }, {
     { name = 'buffer' },
   })
