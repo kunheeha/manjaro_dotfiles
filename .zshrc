@@ -166,7 +166,7 @@ alias dbrestore='./scripts/cache_database_restore.sh'
 alias dbcreate='./scripts/cache_database_create.sh'
 alias dbdelete='./scripts/cache_database_destroy.sh'
 alias clientdbrefresh='./scripts/drop_database.sh && ./scripts/create_database.sh'
-alias bootstrapdb='./scripts/bootstrap_from_prod.sh'
+alias bootstrapdb='./scripts/bootstrap_from_production.sh'
 #
 # Random
 alias cpufetch='~/cpufetch/cpufetch'
