@@ -30,8 +30,8 @@ keymap("n", "<Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<Leader>nr", ":set invrnu<CR>", opts)
 -- BUFFERS
 -- Cycling though buffers
-keymap("n", "<TAB>", ":bnext<CR>", opts)
-keymap("n", "<S-TAB>", ":bprev<CR>", opts)
+keymap("n", "<Leader>bn", ":bnext<CR>", opts)
+keymap("n", "<Leader>bp", ":bprev<CR>", opts)
 -- Kill buffers
 keymap("n", "<Leader>bk", ":bdelete<CR>", opts)
 -- NvimTreeToggle
