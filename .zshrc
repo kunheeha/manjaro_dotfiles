@@ -147,6 +147,9 @@ alias gpf='git push -f origin'
 alias gbd='git branch -d'
 alias gr='git rebase origin/master'
 alias grc='git rebase --continue'
+alias gm='git merge'
+alias gmc='git merge --continue'
+alias gf='git fetch'
 
 # Work
 alias staff='cd ~/Work/webapp-alpha'
