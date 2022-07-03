@@ -56,7 +56,7 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
+# My config
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
