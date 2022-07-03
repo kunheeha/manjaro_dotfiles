@@ -148,10 +148,10 @@ alias lending="cd app/common/workflow/data/lending_v1"
 alias remortgaging="cd app/common/workflow/data/remortgaging_v1"
 alias migrate='./scripts/plan_migrations.sh'
 alias synccase='./scripts/sync_case_to_client_app.sh'
-alias dbrestore='./scripts/cache_database_restore.sh'
-alias dbcreate='./scripts/cache_database_create.sh'
-alias dbdelete='./scripts/cache_database_destroy.sh'
-alias clientdbrefresh='./scripts/drop_database.sh && ./scripts/create_database.sh'
+alias dbrestore='~/Work/webapp-alpha/scripts/cache_database_restore.sh'
+alias dbcreate='~/Work/webapp-alpha/scripts/cache_database_create.sh'
+alias dbdelete='~/Work/webapp-alpha/scripts/cache_database_destroy.sh'
+alias clientdbrefresh='~/Work/client-app/scripts/drop_database.sh && ~/Work/client-app/scripts/create_database.sh'
 alias bootstrapdb='~/Work/webapp-alpha/scripts/bootstrap_from_production.sh'
 #
 # Random
