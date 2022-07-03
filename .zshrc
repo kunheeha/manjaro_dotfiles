@@ -167,5 +167,5 @@ hash -d Selling=~/Work/webapp-alpha/app/common/workflow/data/selling_workflow_v0
 hash -d Remortgaging=~/Work/webapp-alpha/app/common/workflow/data/remortgaging_v1
 hash -d Lending=~/Work/webapp-alpha/app/common/workflow/data/lending_v1
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+# p10k prompt
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
