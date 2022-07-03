@@ -1,5 +1,7 @@
 vim.cmd('abb teh the')
 vim.cmd('abb Teh The')
+vim.cmd('abb waht what')
+vim.cmd('abb Waht What')
 vim.cmd('abb compnay company')
 vim.cmd('abb cliet client')
 vim.cmd('abb cleint client')
