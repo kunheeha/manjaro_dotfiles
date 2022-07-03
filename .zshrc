@@ -123,7 +123,7 @@ alias 2lowbrightness='xrandr --output DisplayPort-0 --brightness 0.1'
 alias music='ncmpcpp'
     
 # Git
-alias gls 'git worktree list'
+alias gls='git worktree list'
 alias gA='git add .'
 alias ga='git add'
 alias gc='git commit -m'
