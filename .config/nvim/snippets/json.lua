@@ -48,21 +48,26 @@ local newtask = s('newtask', {
 })
 table.insert(snippets, newtask)
 
-local newfield = s('newfield', {
+-- NEW AUTOTASK
+local newauto = s('newauto', {
   t('{'),
-  t({'', '  "name": "'}),
-  i(1, 'fieldname'),
-  t('",'),
-  t({'', '  "field_type": "'}),
-  i(2, 'fieldtype'),
-  t('",'),
-  t({'', '  "display_name": "'}),
-  i(3, 'displayname'),
-  t('",'),
-  t({'', '  "required": '}),
-  i(4, 'true'),
+  t({'', '  "identifier": "'}),
+  i(1, 'autotask_identifier'),
+  t({'', '",'}),
+  t({'', '  "title": "'}),
+  i(2, 'autotask_title'),
+  t({'', '",'}),
+  t({'', '  "action_type": "'}),
+  i(3, 'autotask_type'),
+  t({'', '",'}),
+  t({'', '  "action_params": {'}),
+  t({'', '    "template": "'}),
+  i(4, 'template_identifier'),
+  t({'', '",'}),
+  t({'', '    "send_to_all_clients": true'}),
+  t({'', '  }'}),
   t({'', '}'})
 })
-table.insert(snippets, newfield)
+table.insert(snippets, newauto)
 
 return snippets, autosnippets
