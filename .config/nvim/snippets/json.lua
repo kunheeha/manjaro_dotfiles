@@ -21,6 +21,24 @@ local precheck = s('precheck', {
 })
 table.insert(snippets, precheck)
 
+local newfield = s('newfield', {
+  t('{'),
+  t({'', '  "name": "'}),
+  i(1, 'fieldname'),
+  t('",'),
+  t({'', '  "field_type": "'}),
+  i(2, 'fieldtype'),
+  t('",'),
+  t({'', '  "display_name": "'}),
+  i(3, 'displayname'),
+  t('",'),
+  t({'', '  "required": '}),
+  i(4, 'true'),
+  t({'', '}'})
+})
+table.insert(snippets, newfield)
+
+-- NEW TASK
 local newtask = s('newtask', {
   t('['),
   t({'', '  {'}),
