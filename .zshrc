@@ -147,13 +147,13 @@ alias buying="cd app/common/workflow/data/buying_workflow_v0.2"
 alias selling="cd app/common/workflow/data/selling_workflow_v0.1"
 alias lending="cd app/common/workflow/data/lending_v1"
 alias remortgaging="cd app/common/workflow/data/remortgaging_v1"
-alias migrate='./scripts/plan_migrations.sh'
-alias synccase='./scripts/sync_case_to_client_app.sh'
-alias dbrestore='~/Work/webapp-alpha/scripts/cache_database_restore.sh'
-alias dbcreate='~/Work/webapp-alpha/scripts/cache_database_create.sh'
-alias dbdelete='~/Work/webapp-alpha/scripts/cache_database_destroy.sh'
-alias clientdbrefresh='~/Work/client-app/scripts/drop_database.sh && ~/Work/client-app/scripts/create_database.sh'
-alias bootstrapdb='~/Work/webapp-alpha/scripts/bootstrap_from_production.sh'
+alias migrate='./scripts/plan_migrations.sh; notify-send "StaffApp Migrations Complete" &'
+alias synccase='./scripts/sync_case_to_client_app.sh; notify-send "Case Sync Complete" &'
+alias dbrestore='~/Work/webapp-alpha/scripts/cache_database_restore.sh; notify-send "StaffApp Cache Database Restored" &'
+alias dbcreate='~/Work/webapp-alpha/scripts/cache_database_create.sh; notify-send "StaffApp Cache Database Created" &'
+alias dbdelete='~/Work/webapp-alpha/scripts/cache_database_destroy.sh; notify-send "StaffApp Cache Database Destroyed" &'
+alias clientdbrefresh='~/Work/client-app/scripts/drop_database.sh && ~/Work/client-app/scripts/create_database.sh; notify-send "ClientApp Database Refreshed" &'
+alias bootstrapdb='~/Work/webapp-alpha/scripts/bootstrap_from_production.sh; notify-send "Database Bootstrap Complete" &'
 #
 # Random
 alias cpufetch='~/cpufetch/cpufetch'

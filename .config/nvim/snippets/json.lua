@@ -88,4 +88,12 @@ local newauto = s('newauto', {
 })
 table.insert(snippets, newauto)
 
+-- JINJA
+-- If
+-- If case field
+-- Elif
+-- Elif case field
+-- Else
+-- Endif
+
 return snippets, autosnippets
