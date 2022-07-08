@@ -6,7 +6,7 @@ shell:
 live_config_reload: true
   
 window:
-  opacity: 0.7
+  opacity: 0.9
   padding:
     x: 20
     y: 16
@@ -22,8 +22,8 @@ draw_bold_text_with_bright_colors: true
 #NORD
 colors:
   primary:
-    # background: '#1E1D2F'
-    background: '#1b1e24'
+    background: '#1E1D2F'
+    # background: '#1b1e24'
     # background: '#1B1D1E'
     # background: '#2e3440'
     foreground: '#d8dee9'
