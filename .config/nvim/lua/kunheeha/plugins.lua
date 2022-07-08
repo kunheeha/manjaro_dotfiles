@@ -17,6 +17,10 @@ Plug 'hrsh7th/cmp-buffer' -- buffer cmp
 Plug 'hrsh7th/cmp-path' -- path cmp
 Plug 'hrsh7th/cmp-cmdline' --cmdline cmp
 -- Snippets
+-- Luasnip
+Plug 'L3MON4D3/LuaSnip'
+Plug 'saadparwaiz1/cmp_luasnip'
+-- Vimsnip
 Plug 'hrsh7th/cmp-vsnip' -- cmp for snippets
 Plug 'hrsh7th/vim-vsnip'
 -- Auto pairs for '(' '[' '{'
