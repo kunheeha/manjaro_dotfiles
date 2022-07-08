@@ -25,8 +25,6 @@ cmp.setup({
         luasnip.expand()
       elseif luasnip.expand_or_jumpable() then
         luasnip.expand_or_jump()
-      elseif check_backspace() then
-        fallback()
       else
         fallback()
       end
@@ -35,18 +33,6 @@ cmp.setup({
       "s",
     }),
   }),
-  formatting = {
-    fields = { 'kind', 'abbr', 'menu' },
-    format = function(entry, vim_item)
-      vim_item.kind = string.format('%s', kind_icons[vim_item.kind])
-      vim_item.menu = ({
-        luasnip = '[Snippet]',
-        buffer = '[Buffer]',
-        path = '[Path]',
-      })[entry.source.name]
-      return vim_item
-    end,
-  },
   sources = cmp.config.sources({
     { name = 'luasnip' }, -- Load luasnip
     { name = 'nvim_lsp' },
