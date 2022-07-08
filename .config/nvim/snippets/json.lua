@@ -71,17 +71,17 @@ local newauto = s('newauto', {
   t('{'),
   t({'', '  "identifier": "'}),
   i(1, 'autotask_identifier'),
-  t({'', '",'}),
+  t('",'),
   t({'', '  "title": "'}),
   i(2, 'autotask_title'),
-  t({'', '",'}),
+  t('",'),
   t({'', '  "action_type": "'}),
   i(3, 'autotask_type'),
-  t({'', '",'}),
+  t('",'),
   t({'', '  "action_params": {'}),
   t({'', '    "template": "'}),
   i(4, 'template_identifier'),
-  t({'', '",'}),
+  t('",'),
   t({'', '    "send_to_all_clients": true'}),
   t({'', '  }'}),
   t({'', '}'})
@@ -90,10 +90,53 @@ table.insert(snippets, newauto)
 
 -- JINJA
 -- If
+local jif = s('jinja if', {
+  t('{% if '),
+  i(1, 'conditional'),
+  t(' %}')
+})
+table.insert(snippets, jif)
 -- If case field
+local jiffield = s('jinja if case.get_field', {
+  t('{% if case.get_field(\''),
+  i(1, 'fieldname'),
+  t('\') == '),
+  i(2, 'fieldvalue'),
+  t(' %}')
+})
+table.insert(snippets, jiffield)
 -- Elif
+local jelif = s('jinja elif', {
+  t('{% elif '),
+  i(1, 'conditional'),
+  t(' %}')
+})
+table.insert(snippets, jelif)
 -- Elif case field
+local jeliffield = s('jinja elif case.get_field', {
+  t('{% elif case.get_field(\''),
+  i(1, 'fieldname'),
+  t('\') == '),
+  i(2, 'fieldvalue'),
+  t(' %}')
+})
+table.insert(snippets, jeliffield)
 -- Else
+local jelse = s('jinja else', {
+  t('{% else %}')
+})
+table.insert(snippets, jelse)
 -- Endif
+local jendif = s('jinja endif', {
+  t('{% endif %}')
+})
+table.insert(snippets, jendif)
 
+-- case.get_field
+local casefield = s('case.get_field', {
+  t('{{case.get_field(\''),
+  i(1, 'fieldname'),
+  t('\')}}')
+})
+table.insert(snippets, casefield)
 return snippets, autosnippets
