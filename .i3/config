@@ -248,6 +248,7 @@ mode "resize" {
 bindsym $mod+9 exec --no-startup-id blurlock
 
 # Autostart applications
+exec --no-startup-d ~/.screenlayout/worksetup.sh
 exec_always --no-startup-id polybar main_bar --config=$HOME/.config/polybar/config.ini
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore; sleep 1; picom -b --experimental-backend
