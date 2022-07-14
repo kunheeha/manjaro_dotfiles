@@ -154,6 +154,7 @@ alias dbcreate='~/Work/webapp-alpha/scripts/cache_database_create.sh; notify-sen
 alias dbdelete='~/Work/webapp-alpha/scripts/cache_database_destroy.sh; notify-send "StaffApp Cache Database Destroyed" &'
 alias clientdbrefresh='~/Work/client-app/scripts/drop_database.sh && ~/Work/client-app/scripts/create_database.sh; notify-send "ClientApp Database Refreshed" &'
 alias bootstrapdb='~/Work/webapp-alpha/scripts/bootstrap_from_production.sh; notify-send "Database Bootstrap Complete" &'
+alias staffenv='cp ~/Work/webapp-alpha/environment.sh ./environment.sh'
 #
 # Random
 alias cpufetch='~/cpufetch/cpufetch'
