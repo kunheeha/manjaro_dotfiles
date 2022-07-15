@@ -121,6 +121,9 @@ alias 2halfbrightness='xrandr --output DisplayPort-0 --brightness 0.5'
 alias 2lowbrightness='xrandr --output DisplayPort-0 --brightness 0.1'
 # ncmpcpp
 alias music='ncmpcpp'
+# Screen layout settings
+alias fullscreen='~/.screenlayout/worksetup.sh'
+alias halfscreen='~/.screenlayout/two_os.sh'
     
 # Git
 alias gls='git worktree list'
