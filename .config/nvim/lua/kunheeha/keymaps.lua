@@ -44,8 +44,8 @@ keymap("n", "<Leader>fn", ":FloatermNext<CR>", opts)
 keymap("n", "<Leader>fp", ":FloatermPrev<CR>", opts)
 keymap("n", "<Leader>fc", ":FloatermNew --name=", opts)
 -- Easier navigation through wrapped line
-keymap("n", "j", "gj", opts)
-keymap("n", "k", "gk", opts)
+-- keymap("n", "j", "gj", opts)
+-- keymap("n", "k", "gk", opts)
 -- Remove all HighStr Highlight
 keymap("n", "<Leader>rahl", ":<c-u>HSRmHighlight rm_all<CR>", opts)
 -- Gitsigns
