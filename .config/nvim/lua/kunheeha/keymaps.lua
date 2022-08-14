@@ -85,6 +85,7 @@ keymap("t", "<Esc>", "<C-\\><C-n>", opts)
 -- Command Mode (c) --
 
 -- Telescope
-keymap("n", "<C-f>", "<cmd>Telescope find_files hidden=true<CR>", opts)
-keymap("n", "<C-g>", "<cmd>Telescope live_grep hidden=true<CR>", opts)
-keymap("n", "<C-b>", "<cmd>Telescope buffers<CR>", opts)
+keymap("n", "<C-f>", "<cmd>Telescope find_files theme=dropdown hidden=true<CR>", opts)
+keymap("n", "<Leader>fb", "<cmd>Telescope file_browser theme=dropdown hidden=true<CR>", opts)
+keymap("n", "<C-g>", "<cmd>Telescope live_grep theme=dropdown hidden=true<CR>", opts)
+keymap("n", "<C-b>", "<cmd>Telescope theme=dropdown buffers<CR>", opts)

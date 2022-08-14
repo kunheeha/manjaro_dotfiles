@@ -2,6 +2,7 @@ local actions = require "telescope.actions"
 
 require("telescope").load_extension("fzf")
 require("telescope").load_extension("media_files")
+require("telescope").load_extension("file_browser")
 
 require('telescope').setup{
   defaults = {
@@ -56,6 +57,10 @@ require('telescope').setup{
       }
     },
     extensions = {
+      file_browser = {
+        hijack_netrw = true,
+        theme = "dropdown"
+      },
       fzf = {
         fuzzy = true,
         override_generic_sorter = true,

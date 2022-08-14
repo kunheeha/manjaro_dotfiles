@@ -29,6 +29,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'nvim-telescope/telescope.nvim'
 Plug('nvim-telescope/telescope-fzf-native.nvim', {['do'] = 'make'}) -- fzf telescope plugin
 Plug 'nvim-telescope/telescope-media-files.nvim'
+Plug 'nvim-telescope/telescope-file-browser.nvim' -- filebrowser telescope plugin
 -- Treesitter
 Plug('nvim-treesitter/nvim-treesitter', {['do'] = 'TSUpdate'})
 Plug 'nvim-treesitter/playground'
