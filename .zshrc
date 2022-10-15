@@ -142,6 +142,8 @@ alias gmc='git merge --continue'
 alias gf='git fetch'
 
 # Work
+alias vpnconnect='nmcli con up id prod-developer-vpn && nmcli con up id preview-developer-vpn'
+alias vpndisconnect='nmcli con down id prod-developer-vpn && nmcli con down id preview-developer-vpn'
 alias staff='cd ~/Work/webapp-alpha'
 alias runstaff='./scripts/run_everything.sh'
 alias client='cd ~/Work/client-app'
