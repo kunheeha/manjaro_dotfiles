@@ -122,8 +122,8 @@ alias 2lowbrightness='xrandr --output DisplayPort-0 --brightness 0.1'
 # ncmpcpp
 alias music='ncmpcpp'
 # Screen layout settings
-alias fullscreen='~/.screenlayout/worksetup.sh'
-alias halfscreen='~/.screenlayout/two_os.sh'
+alias fullscreen='~/.screenlayout/fullscreen.sh'
+alias halfscreen='~/.screenlayout/split_screen.sh'
     
 # Git
 alias gls='git worktree list'
@@ -131,8 +131,8 @@ alias gA='git add .'
 alias ga='git add'
 alias gc='git commit -m'
 alias gs='git status'
-alias gp='git push origin'
-alias gpf='git push -f origin'
+alias gp='git push origin $(git branch --show-current)'
+alias gpf='git push -f origin $(git branch --show-current)'
 alias gbd='git branch -d'
 alias gbdf='git branch -D'
 alias gr='git rebase origin/master'
@@ -140,13 +140,22 @@ alias grc='git rebase --continue'
 alias gm='git merge'
 alias gmc='git merge --continue'
 alias gf='git fetch'
+alias gwa='git worktree add'
 
 # Work
+alias work='cd ~/Work'
+alias workprojects='cd ~/Work/Projects'
 alias vpnconnect='nmcli con up id prod-developer-vpn && nmcli con up id preview-developer-vpn'
 alias vpndisconnect='nmcli con down id prod-developer-vpn && nmcli con down id preview-developer-vpn'
 alias staff='cd ~/Work/webapp-alpha'
+alias staffref='cd ~/Work/webapp-alpha/reference'
+alias buyingref='cd ~/Work/webapp-alpha/reference/app/common/workflow/data/buying_workflow_v0.2'
+alias sellingref='cd ~/Work/webapp-alpha/reference/app/common/workflow/data/selling_workflow_v0.1'
+alias remortgagingref='cd ~/Work/webapp-alpha/reference/app/common/workflow/data/remortgaging_v1'
+alias lendingref='cd ~/Work/webapp-alpha/reference/app/common/workflow/data/lending_v1'
 alias runstaff='./scripts/run_everything.sh'
 alias client='cd ~/Work/client-app'
+alias clientref='cd ~/Work/client-app/reference'
 alias runclient="./scripts/run_app.sh"
 alias buying="cd app/common/workflow/data/buying_workflow_v0.2"
 alias selling="cd app/common/workflow/data/selling_workflow_v0.1"
@@ -160,6 +169,7 @@ alias dbdelete='~/Work/webapp-alpha/scripts/cache_database_destroy.sh; notify-se
 alias clientdbrefresh='~/Work/client-app/scripts/drop_database.sh && ~/Work/client-app/scripts/create_database.sh; notify-send "ClientApp Database Refreshed" &'
 alias bootstrapdb='~/Work/webapp-alpha/scripts/bootstrap_from_production.sh; notify-send "Database Bootstrap Complete" &'
 alias staffenv='cp ~/Work/webapp-alpha/environment.sh ./environment.sh'
+alias clientenv='cp ~/Work/client-app/environment.sh ./environment.sh'
 #
 # Random
 alias cpufetch='~/cpufetch/cpufetch'
@@ -169,11 +179,17 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # Work
 hash -d StaffApp=~/Work/webapp-alpha
+hash -d StaffReference=~/Work/webapp-alpha/reference
+hash -d ClientApp=~/Work/client-app
 hash -d ClientApp=~/Work/client-app
 hash -d Buying=~/Work/webapp-alpha/app/common/workflow/data/buying_workflow_v0.2
 hash -d Selling=~/Work/webapp-alpha/app/common/workflow/data/selling_workflow_v0.1
 hash -d Remortgaging=~/Work/webapp-alpha/app/common/workflow/data/remortgaging_v1
 hash -d Lending=~/Work/webapp-alpha/app/common/workflow/data/lending_v1
+hash -d BuyingRef=~/Work/webapp-alpha/reference/app/common/workflow/data/buying_workflow_v0.2
+hash -d SellingRef=~/Work/webapp-alpha/reference/app/common/workflow/data/selling_workflow_v0.1
+hash -d RemortgagingRef=~/Work/webapp-alpha/reference/app/common/workflow/data/remortgaging_v1
+hash -d LendingRef=~/Work/webapp-alpha/reference/app/common/workflow/data/lending_v1
 
 # p10k prompt
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
