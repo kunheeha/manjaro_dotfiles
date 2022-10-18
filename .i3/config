@@ -21,6 +21,7 @@ bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 default_border none
 default_floating_border none
+# for_window [all] default_border pixel none
 
 # Hide borders
 hide_edge_borders none
@@ -308,7 +309,7 @@ tray_output primary
 
 	bindsym button4 nop
 	bindsym button5 nop
-#   font xft:URWGothic-Book 11
+  font xft:URWGothic-Book 11
 	strip_workspace_numbers yes
 
     colors {
