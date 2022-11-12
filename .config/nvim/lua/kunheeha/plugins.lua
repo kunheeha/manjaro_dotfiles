@@ -7,6 +7,8 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'shaunsingh/nord.nvim'
 -- Catppuccin Theme
 Plug('catppuccin/nvim', {['as'] = 'catppuccin'})
+-- Everblush Theme
+Plug('Everblush/everblush.nvim', {['as'] = 'everblush'})
 -- LSP
 Plug 'neovim/nvim-lspconfig' -- LSP
 Plug 'williamboman/nvim-lsp-installer' --LSP installer

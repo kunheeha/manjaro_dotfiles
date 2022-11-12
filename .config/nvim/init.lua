@@ -4,6 +4,7 @@ require "kunheeha.plugins"
 require "kunheeha.catppuccin"
 -- vim.cmd( [[colorscheme nord]] )
 vim.cmd( [[colorscheme catppuccin]] )
+-- require "everblush"
 require "kunheeha.cmp"
 require "kunheeha.lsp"
 require "kunheeha.telescope"
