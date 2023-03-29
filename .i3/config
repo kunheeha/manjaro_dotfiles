@@ -10,7 +10,7 @@ bindsym $mod+q kill
 # start program launcher
 bindsym $mod+d exec --no-startup-id rofi -show drun -run-shell-command '{terminal} -e zsh -ic "{cmd} && read"'
 
-bindsym $mod+Ctrl+t exec --no-startup-id picom -b --experimental-backend
+bindsym $mod+Ctrl+t exec --no-startup-id picom
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
